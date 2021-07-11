@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拉勾网</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .mian{         /*     公共样式 */
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .fleft{        /* 左浮动*/
+            float: left;
+        }
+        .fright{       /* 右浮动*/
+            float: right;
+        }
+        .clearFixed:after{ /* 伪元素方法清楚浮动*/
+            content: "";    /*内容为空*/
+            display: block; /*加入的这个元素转换为块级元素*/
+            clear: both;    /*清楚左右两边的浮动*/
+            visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已*/
+            line-height: 0;    /*行高为0*/
+            height: 0;     /*高度为0*/
+            font-size:0;    /*字体大小为0*/
+        }
+        p,h1,h2,h3,h4,h5,dl,dt,dd,ol,ul,li{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        li{
+            list-style: none;
+        }
+        input{
+            border: none;
+        }
+        img{
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="box">
+        <div class="header">
+            <div class="h_top">
+                <div class="topCon mian clearFixed"><!-- 子元素浮动必须给父元素添加清楚浮动 -->
+                    <div class="conLeft fleft"></div>
+                    <div class="conRight fright"></div>
+                </div>
+            </div>
+            <div class="h_bottom">
+                <div class="botCon mian"></div>
+            </div>
+        </div>
+        <div class="sear"></div>
+        <div class="banner"></div>
+        <div class="content"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
