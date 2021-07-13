@@ -176,3 +176,54 @@
     color: #ccefe7;
     background: transparent;
 }
+
+
+
+/* sear 样式 */
+.sear{
+    height: 132px;
+    background: #f2f5f4;
+}
+.sear .searCon{
+    height: 102px;
+    padding-top: 30px;
+    /* background: turquoise; */
+    
+}
+.searCon .search{
+    width: 937px;
+    height: 47px;
+    background: #00b38a;
+    margin-left: 133px;
+}
+.searCon .search .searchInp{
+    font-size: 14px;
+    width: 794px;
+    height: 45px;
+    border: 1px solid #e8e8e8;
+    text-indent: 6px;
+}
+.searCon .search .btn{
+    font-size: 18px;
+    width: 141px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    color: #fff;
+}
+.searCon .searList{
+    margin-left: 133px;
+    font-size: 12px;
+    height: 38px;
+    line-height: 38px;
+}
+.searCon .searList li{
+    float: left;
+}
+.searCon .searList li:first-child a{
+    color: #333;
+}
+.searCon .searList li a{
+    color: #00c1cc;
+    padding-right: 22px;
+}
