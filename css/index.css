@@ -227,3 +227,70 @@
     color: #00c1cc;
     padding-right: 22px;
 }
+
+
+/* banner 样式 */
+.bannCon{
+    /* height: 430px; */
+    /* background: pink; */
+    padding-top: 40px;
+}
+.bannCon .banLeft{
+    width: 300px;
+    /* height: 430px; */
+    /* background: powderblue; */
+}
+.bannCon .banLeft .banList{
+    font-size: 12px;
+}
+.bannCon .banLeft .banList li{
+    margin-bottom: 26px;
+}
+.bannCon .banLeft .banList li a{
+    color: #555;
+    padding-right: 23px;
+}
+.bannCon .banLeft .banList li a:first-child{
+    font-size: 16px;
+    font-weight: bold;
+}
+.bannCon .banLeft .banList li span{
+    font-family: "宋体";
+    margin-top: 5px;
+    color: #555;
+}
+.bannCon .banRight{
+    position: relative;
+    width: 840px;
+    height: 347px;
+    /* background: purple; */
+}
+.bannCon .banRight .banImgBox{
+    width: 840px;
+    height: 347px;
+}
+.bannCon .banRight .banImgBox .banImg{
+    width: 100%;
+    height: 100%;
+}
+.bannCon .banRight span{
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    width: 22px;
+    height: 34px;
+    font-size: 34px;
+    color: #000;
+    font-family: "宋体";
+    font-weight: bolder;
+    display: none;
+}
+.bannCon .banRight:hover span{
+    display: block;
+}
+.bannCon .banRight .btnLeft{
+    left: 20px;
+}
+.bannCon .banRight .btnRight{
+    right: 20px;
+}
