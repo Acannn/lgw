@@ -294,3 +294,122 @@
 .bannCon .banRight .btnRight{
     right: 20px;
 }
+
+
+/* content样式 */
+.content .line1{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.content .lineTop{
+    height: 118px;
+    background: pink;
+}
+.content .lineTop .top1{
+    height: 53px;
+    line-height: 53px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.content .lineTop .top1 .hotBtn{
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+    margin-right: 60px;
+}
+.content .lineTop .top1 .newBtn{
+    color: #999;
+}
+.content .lineTop .top2{
+    height: 42px;
+    padding-top: 24px;
+    font-size: 12px;
+}
+.content .lineTop .top2 span{
+    width: 18px;
+    height: 18px;
+    background: #ccc;
+    color: #fff;
+    /*margin-top: 24px; /* 66/2-18/2=24 */
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+.content .lineTop .top2 a:nth-of-type(1){
+    color: #999;
+    margin-right: 55px;
+}
+.content .lineTop .top2 a:nth-of-type(2){
+    color: #00b38a;
+}
+
+.content .line1 .conUl li{
+    margin-bottom: 17px;
+}
+.content .line1 .conUl li .conBox{
+    width: 355px;
+    /* height: 176px; */
+    border: 1px solid #eaeeed;
+    padding: 24px 17px 16px; 
+}
+.content .line1 .conUl li .conBox .btn{
+    font-size: 18px;
+    color: #9999b2;
+}
+.content .line1 .conUl li .conBox .job{
+    font-size: 18px;
+}
+.content .line1 .conUl li .conBox .job .time{
+    color: #9999b2;
+    margin: 0 8px;
+}
+.content .line1 .conUl li .conBox .job img{
+    margin-top: 6px;
+}
+.content .line1 .conUl li .conBox .job .money{
+    font-size: 12px;
+    color: #fa6041;
+    margin-top: 4px;
+}
+.content .line1 .conUl li .conBox .btn2{
+    margin: 13px 0;
+}
+.content .line1 .conUl li .conBox .spa{
+    border: 1px solid #eaeeed;
+    padding: 8px 25px;
+    border-radius: 5px;
+    margin-right: 12px;
+    font-size: 12px;
+}
+.content .line1 .conUl li .conBox .pBor{
+    border-bottom: 1px dashed #eaeeed;
+    padding-bottom: 20px;
+}
+.content .line1 .conUl li .conBox .imgBox{
+     padding-top: 18px;
+}
+.content .line1 .conUl li .conBox .imgBox img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.content .line1 .conUl li .conBox .imgBox .imgTxt{
+    font-size: 12px;
+}
+.content .line1 .conUl li .conBox .imgBox .imgTxt .txt1{
+    color: #555;
+    margin-bottom: 5px;
+}
+.content .line1 .conUl li .conBox .imgBox .imgTxt .txt2{
+    color: #999;
+}
+.content .line1 .conUl li div:nth-of-type(2){
+    margin: 0px 13px 0px 14px;
+}
+.content .line1 .more{
+    width: 390px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #00b38a;
+    text-align: center;
+    margin: 50px auto;
+    color: #00b38a;
+}
