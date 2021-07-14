@@ -487,3 +487,20 @@
     margin-left: 4px;
 } 
 
+
+/* footer样式 */
+.footer{
+    border-top: 1px solid #ebebeb;
+    margin-top: 70px;
+}
+.footer .fooTop{
+    height: 236px;
+    background: pink;
+    padding-top: 50px;
+}
+.footer .fooTop .appBox{
+    width: 314px;
+    height: 170px;
+    background: purple;
+    border-right: 1px solid #e8e8e8;
+}
