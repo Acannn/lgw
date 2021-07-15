@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+        }
+        .fleft{        /* 左浮动*/
+            float: left;
+        }
+        .fright{       /* 右浮动*/
+            float: right;
+        }
+        .clearFixed:after{ /* 伪元素方法清楚浮动*/
+            content: "";    /*内容为空*/
+            display: block; /*加入的这个元素转换为块级元素*/
+            clear: both;    /*清楚左右两边的浮动*/
+            visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已*/
+            line-height: 0;    /*行高为0*/
+            height: 0;     /*高度为0*/
+            font-size:0;    /*字体大小为0*/
+        }
+        .btnRed:after{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: -1px;
+            margin-left: -10px;
+            border:6px solid transparent;
+            border-bottom-color: #fff;
+        }
+        .btnWhite:before{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 0px;
+            margin-left: -10px;
+            border:6px solid transparent;
+            border-bottom-color: #00b38a;
+        }
+        p,h1,h2,h3,h4,h5,dl,dt,dd,ol,ul,li{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        li{
+            list-style: none;
+        }
+        input{
+            border: none;
+            outline: none;  /*点击时去掉默认的外层边框 */
+        }
+        img{
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="boxCon">
+        <div class="logo"></div>
+        <form action="#" method="GET">
+            <div class="forBox">
+                <div class="imgBox clearFixed">
+                    <img class="fleft" src="img2/qrcode-normal.svg" alt="#">
+                    <img class="fleft" src="img2/wx-login.svg" alt="#">
+                </div>
+                <div class="inpLeft fleft">
+                    <div class="line1">
+                        <p class="txtP1 fleft btnRed btnWhite">密码登录</p>
+                        <p class="txtP2 fleft">验证码登录</p>
+                    </div>
+                    <div class="lineInp">
+                        <input type="text" placeholder="请输入常用手机号或者邮箱">
+                    </div>
+                    <div class="lineInp">
+                        <input type="password" placeholder="请输入密码">
+                    </div>
+                    <p class="txt">忘记密码?</p>
+                    <input class="submit" type="submit" value="登录">
+                    <span class="or">or</span>
+                </div>
+                <div class="inpRight fleft">
+                    <div class="txt1">
+                            还没有账号
+                    </div>
+                    <div class="txt2">
+                        立即注册
+                        <img src="img2/icon-arrow-right.png" alt="">
+                    </div>
+                    <div class="txt3">
+                        <p>使用以下账号直接登录</p>
+                        <img class="fleft" src="img2/icon-sina1.png" alt="">
+                        <img class="fleft" src="img2/icon-wechat.png" alt="">
+                        <img class="fleft" src="img2/icon-tencent.png" alt="">
+                        <img class="fleft" src="img2/icon-baidu.png" alt="">
+                    </div>
+                </div>
+            </div>   
+        </form>
+    </div>
+</body>
+</html>
